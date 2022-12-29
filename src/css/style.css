@@ -98,11 +98,31 @@ li {
 
 .section {
     padding: 8rem 0 0 0;
+
+    position: relative;
 }
 
 .section--price {
     padding: 3rem 0 6rem 0;
     background-color: #EAF4FB;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 83%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.section.section--faq {
+    padding: 3rem 0 0 0;
+}
+
+.section--contacts {
+    background: url("../img/contacts/map.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 0;
 }
 
 .section__title {
@@ -570,6 +590,14 @@ li {
 
 .price {
     max-width: 1113px;
+    position: relative;
+    z-index: 5;
+    padding: 0 0 6rem 0;
+}
+
+.price__title {
+    position: relative;
+    z-index: 5;
 }
 
 .price__content {
@@ -639,6 +667,7 @@ li {
     border-radius: 1rem;
 
     position: relative;
+
     overflow: hidden;
 }
 
@@ -648,8 +677,9 @@ li {
 
 .price__footer-img {
     position: absolute;
-    right: -10px;
+    right: -30px;
     top: 25px;
+    z-index: 1;
 }
 
 .price__footer-img img {
@@ -660,6 +690,61 @@ li {
 
 .price__form {
     margin: 2rem 0 1rem 0;
+
+    position: relative;
+    z-index: 5;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.form__item {}
+
+.form__input {
+    padding: 1.5rem 0 1.5rem 2rem;
+    background: #FFFFFF;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.form__input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: #478ECC;
+}
+
+.select {
+    width: 383px;
+    padding: 1.5rem 0 1.5rem 2rem;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.select option:disabled+option::selection {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .price__description {
@@ -686,6 +771,7 @@ li {
 
 .faq__content {
     display: inline-block;
+    width: 48%;
 }
 
 .faq-accordion {
@@ -718,17 +804,8 @@ li {
 }
 
 .faq-accordion__item.active .faq-accordion__header::after {
-    transform: translateY(-50%) rotate(45deg);
-    width: 20px;
-    height: 20px;
-    right: -2px;
+    background: url("../img/faq/minus.svg") center no-repeat;
 }
-
-/* .faq-accordion__item.active .faq-accordion__header::before {
-    right: 1px;
-    transform: rotate(135deg) translateY(-50%);
-    width: 18px;
-} */
 
 .faq-accordion__header {
     padding: 2rem 3rem 2rem 0;
@@ -741,9 +818,9 @@ li {
     content: "";
     display: block;
 
-    width: 18px;
-    height: 18px;
-    background: url("../img/faq/faq.svg") center no-repeat;
+    width: 34px;
+    height: 34px;
+    background: url("../img/faq/plus.svg") center no-repeat;
 
     position: absolute;
     top: 50%;
@@ -810,5 +887,41 @@ li {
     top: 0;
     left: 0;
     width: 100%;
+    height: auto;
+}
+
+/* CONTACTS */
+
+.contacts {
+    padding: 4rem 0;
+}
+
+.contacts__item {
+    max-width: 384px;
+    padding: 4rem;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.contacts__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+
+    margin: 2rem 0 0 0;
+}
+
+.contacts__item {}
+
+.contacts__content-item {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+}
+
+.contacts__image img {
+    display: block;
+    max-width: 100%;
     height: auto;
 }

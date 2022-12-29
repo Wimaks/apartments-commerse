@@ -312,7 +312,7 @@
             </section>
             <!-- /.section -->
 
-            <section class="section section--price">
+            <section class="section">
                 <div class="container">
                     <h2 class="price__title section__title">Цены</h2>
                     <!-- /.price__title section__title -->
@@ -395,7 +395,30 @@
                             <h2 class="price__footer-title section__title">Не нашли нужную услугу?</h2>
                             <h3 class="price__footer-subtitle item__title">Давайте созвонимся и решим вашу проблему!
                             </h3>
-                            <div class="price__form">1</div>
+                            <div class="price__form">
+                                <form action="/" class="form" id="form">
+                                    <div class="form__item">
+                                        <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="form__item">
+                                        <input class="form__input" type="tel" name="tel" placeholder="Телефон">
+                                    </div>
+                                    <div class="form__item">
+                                        <select name="service" id="service" class="select">
+                                            <option value="lorem" disabled selected>Услуга, которую хотите заказать
+                                            </option>
+                                            <option value="lorem">Lorem.</option>
+                                            <option value="lorem">Lorem.</option>
+                                            <option value="lorem">Lorem.</option>
+                                            <option value="lorem">Lorem.</option>
+                                            <option value="lorem">Lorem.</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__item">
+                                        <button class="button" type="submit">Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
                             <p class="price__description">Нажимая на кнопку, вы даете согласие на обработку
                                 <a href="https://migpro36.ru/files/462237_policy.pdf?1619170808"
                                     target="_blank">персональных данных</a>
@@ -408,10 +431,12 @@
                     <!-- /.price -->
                 </div>
                 <!-- /.container -->
+
+                <div class="section--price"></div>
             </section>
             <!-- /.section section--price -->
 
-            <section class="section">
+            <section class="section section--faq">
                 <div class="container">
                     <h2 class="faq__title section__title">Часто задаваемые вопросы</h2>
                     <div class="faq">
@@ -490,7 +515,7 @@
                             <!-- /.faq-accordion -->
                         </div>
                         <div class="faq__image">
-                            <img src="src/img/faq/faq-image.png" alt="">
+                            <img src="src/img/faq/worker.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -503,10 +528,58 @@
                     <h2 class="contacts__title section__title">Контакты</h2>
                 </div>
             </section>
+
+            <section class="section section--contacts">
+                <div class="container">
+                    <div class="contacts">
+                        <div class="contacts__item">
+                            <h3 class="contacts__item-title item__title">Вы всегда можете легко найти нас</h3>
+                            <div class="contacts__content">
+                                <div class="contacts__content-item">
+                                    <div class="contacts__image">
+                                        <img src="src/img/contacts/location.svg" alt="">
+                                    </div>
+                                    <a href="https://goo.gl/maps/Rbw7DdznPMN6i7UFA" target="_blank">Воронеж, пл.
+                                        Революции, 1</a>
+                                </div>
+                                <div class="contacts__content-item">
+                                    <div class="contacts__image">
+                                        <img src="src/img/contacts/clock.svg" alt="">
+                                    </div>
+                                    <span>Ежедневно с 9:00 до 18:00</span>
+                                </div>
+                                <div class="contacts__content-item">
+                                    <div class="contacts__image">
+                                        <img src="src/img/contacts/mail.svg" alt="">
+                                    </div>
+                                    <a href="mailto:abc@mail.ru">abc@mail.ru</a>
+                                </div>
+                                <div class="contacts__content-item">
+                                    <div class="contacts__image">
+                                        <img src="src/img/contacts/phone.svg" alt="">
+                                    </div>
+                                    <div class="contacts__image">
+                                        <img src="src/img/contacts/whatsapp.svg" alt="">
+                                    </div>
+                                    <div class="contacts__image">
+                                        <img src="src/img/contacts/telegram.svg" alt="">
+                                    </div>
+                                    <a href="tel:+79002454321">8 900 245 43 21</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <footer class="footer"></footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
