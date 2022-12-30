@@ -88,7 +88,7 @@ li {
 
 .container {
     width: 100%;
-    max-width: 1216px;
+    max-width: 1246px;
 
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -578,12 +578,48 @@ li {
 
 .portfolio {
     padding: 0 0 5rem 0;
+
+    display: flex;
+    gap: 2rem;
 }
 
-.portfolio__image img {
+.portfolio__item {
+    /* max-height: 620px;
+    max-width: 289px; */
+}
+
+.portfolio__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    align-items: center;
+}
+
+.portfolio__item {
+    /* display: inline-flex; */
+}
+
+.portfolio__item img {
     display: block;
-    max-width: 100%;
-    height: auto;
+}
+
+.portfolio__item-title,
+.portfolio__link {
+    max-width: 289px;
+}
+
+.portfolio__link {
+    margin-top: 2rem;
+}
+
+.portfolio__link a {
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: #478ECC;
+
+    word-break: break-all;
+
 }
 
 /* PRICE */
@@ -668,7 +704,7 @@ li {
 
     position: relative;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .price__footer-title {
@@ -677,8 +713,8 @@ li {
 
 .price__footer-img {
     position: absolute;
-    right: -30px;
-    top: 25px;
+    right: -45px;
+    bottom: 0;
     z-index: 1;
 }
 
@@ -783,11 +819,11 @@ li {
 }
 
 .faq-accordion__item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #D1E7FF;
 }
 
-.faq-accordion__item:nth-child(n + 5) {
-    display: none;
+.faq-accordion__item:first-child {
+    border-top: 2px solid #D1E7FF;
 }
 
 .faq-accordion__item.active .faq-accordion__content {
@@ -795,12 +831,7 @@ li {
 }
 
 .faq-accordion__item.active {
-    border-bottom: 1px solid transparent;
-    border-width: 1px;
-    border-style: solid;
-    border-image:
-        linear-gradient(to right,
-            #FB2EFF, #005AE9) 0 1 100%;
+    border-bottom: 2px solid #478ECC;
 }
 
 .faq-accordion__item.active .faq-accordion__header::after {
@@ -835,7 +866,7 @@ li {
 .faq-accordion__content {
     padding: 0 0 2rem 0;
     display: none;
-    max-width: 80%;
+    max-width: 85%;
 }
 
 /* .faq-accordion__title {} */
@@ -894,6 +925,8 @@ li {
 
 .contacts {
     padding: 4rem 0;
+
+    position: relative;
 }
 
 .contacts__item {
@@ -924,4 +957,17 @@ li {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.contacts__item-image img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #212121;
 }
