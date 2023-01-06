@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/popup.css">
     <title>Квартиры под ключ</title>
 </head>
 
@@ -69,39 +70,46 @@
                     <!-- /.nav__toggle -->
 
                     <div class="burger">
-                        <h2 class="burger-header__title">
-                            <a href="#">Меню</a>
+                        <h2 class="burger-header__title header__logo">
+                            <a href="#" data-scroll="#intro">Лого</a>
                         </h2>
                         <nav class="burger-nav">
                             <div class="burger-nav__item">
                                 <div class="burger-nav__link">
-                                    <a href="#" data-scroll="#about">О компании</a>
+                                    <a href="#" data-scroll="#about">О нас</a>
                                 </div>
                                 <div class="burger-nav__link">
-                                    <a href="#" data-scroll="#products">Товары</a>
+                                    <a href="#" data-scroll="#products">Наши тарифы</a>
                                 </div>
                                 <div class="burger-nav__link">
-                                    <a href="#" data-scroll="#cooperate">Давайте сотрудничать</a>
+                                    <a href="#" data-scroll="#cooperate">Портфолио</a>
                                 </div>
                                 <div class="burger-nav__link">
-                                    <a href="#" data-scroll="#reviews">Отзывы</a>
+                                    <a href="#" data-scroll="#reviews">Цены</a>
                                 </div>
                                 <div class="burger-nav__link">
+                                    <a href="#" data-scroll="#contacts">Калькулятор</a>
+                                </div>
+                                <div class="nav__link">
                                     <a href="#" data-scroll="#contacts">Контакты</a>
                                 </div>
                             </div>
                             <div class="burger-nav__item burger-nav__item-info">
                                 <div class="burger-nav__link">
                                     <div class="burger-nav__link-item">
-                                        <div class="burger-nav__link-icon">
-                                            <img src="src/img/phone.svg" alt="Телефон" />
-                                        </div>
-                                        <div>
-                                            <a href="tel:+79202441698">8 920 244 16 98</a>
-                                        </div>
+                                        <a href="#" class="burger-nav__link-icon">
+                                            <img src="src/img/header/phone.svg" alt="Телефон" />
+                                        </a>
+                                        <a href="#" class="burger-nav__link-icon">
+                                            <img src="src/img/header/whatsapp.svg" alt="whatsApp" />
+                                        </a>
+                                        <a href="#" class="burger-nav__link-icon">
+                                            <img src="src/img/header/telegram.svg" alt="Telegram" />
+                                        </a>
+                                        <a href="tel:+79202441698">8 920 244 16 98</a>
                                     </div>
                                 </div>
-                                <div class="burger-nav__link">
+                                <!-- <div class="burger-nav__link">
                                     <div class="burger-nav__link-item">
                                         <div class="burger-nav__link-icon">
                                             <img src="src/img/location.svg" alt="Локация" />
@@ -110,12 +118,9 @@
                                             <a href="#">Воронеж</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </nav>
-                        <h2 class="burger-header__logo">
-                            <a href="#">Krasota Studio</a>
-                        </h2>
                     </div>
                 </div>
             </div>
@@ -192,7 +197,7 @@
                                 <img src="src/img/choose/6.svg" alt="Изображение">
                             </div>
                             <div class="choose__item-content">
-                                <h3 class="choose__item-title item__title">И кстати</h3>
+                                <h3 class="choose__item-title item__title" id="choose__item-title">И кстати</h3>
                                 <p class="choose__text">При заказе ремонта клининг в подарок!</p>
                             </div>
                         </div>
@@ -337,44 +342,44 @@
                         <div class="price__content">
                             <div class="price__left">
                                 <ul class="price__list">
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="first">
                                         <div class="price__image"><img src="src/img/price/1.svg" alt=""></div>
                                         <span>Электромонтажные работы</span>
                                     </li>
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="second">
                                         <div class="price__image"><img src="src/img/price/2.svg" alt=""></div>
                                         <span>Сантехнические работы</span>
                                     </li>
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="third">
                                         <div class="price__image"><img src="src/img/price/3.svg" alt=""></div>
                                         <span>Замена батарей отопления</span>
                                     </li>
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="fourth">
                                         <div class="price__image"><img src="src/img/price/4.svg" alt=""></div>
                                         <span>Малярные работы</span>
                                     </li>
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="fifth">
                                         <div class="price__image"><img src="src/img/price/5.svg" alt=""></div>
                                         <span>Укладка плитки</span>
                                     </li>
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="sixth">
                                         <div class="price__image"><img src="src/img/price/6.svg" alt=""></div>
                                         <span>Укладка ламината
                                             и линолеума</span>
                                     </li>
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="seventh">
                                         <div class="price__image"><img src="src/img/price/7.svg" alt=""></div>
                                         <span>Монтаж гипсокартона</span>
                                     </li>
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="eighth">
                                         <div class="price__image"><img src="src/img/price/8.svg" alt=""></div>
                                         <span>Штукатурка стен</span>
                                     </li>
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="ninth">
                                         <div class="price__image"><img src="src/img/price/9.svg" alt=""></div>
                                         <span>Стяжка пола</span>
                                     </li>
-                                    <li class="price__list-link">
+                                    <li class="price__list-link service-name" id="tenth">
                                         <div class="price__image"><img src="src/img/price/10.svg" alt=""></div>
                                         <span>Демонтаж пола</span>
                                     </li>
@@ -382,29 +387,46 @@
                             </div>
                             <div class="price__right">
                                 <ul class="price__list">
-                                    <li class="price__list-link">Монтаж потолочной люстры</li>
-                                    <li class="price__list-link">Монтаж настенной бра</li>
-                                    <li class="price__list-link">Сверление отверстий под точечный светильник</li>
-                                    <li class="price__list-link">Монтаж точечного светильника</li>
-                                    <li class="price__list-link">Монтаж светильника в потолок типа "Армстронг"</li>
-                                    <li class="price__list-link">Установка механизма накладной розетки/выключателя</li>
-                                    <li class="price__list-link">Коммутация соединительной/распределительной
-                                        коробки (до 5 проводов)</li>
-                                    <li class="price__list-link">Открытая прокладка кабеля</li>
-                                    <li class="price__list-link">Прокладка кабеля в кабель-канале</li>
-                                    <li class="price__list-link">Прокладка кабеля в гофрированной трубе</li>
-                                </ul>
-                                <ul class="price__list price__list-price">
-                                    <li class="price__list-link">от 500₽/шт</li>
-                                    <li class="price__list-link">от 400₽/шт</li>
-                                    <li class="price__list-link">350₽/шт</li>
-                                    <li class="price__list-link">350₽/шт</li>
-                                    <li class="price__list-link">400₽/шт</li>
-                                    <li class="price__list-link">190₽/шт</li>
-                                    <li class="price__list-link">250₽/шт</li>
-                                    <li class="price__list-link">60₽/м.п.</li>
-                                    <li class="price__list-link">150₽/м.п.</li>
-                                    <li class="price__list-link">90₽/м.п.</li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Монтаж потолочной люстры</span><span>от
+                                            500₽/шт</span>
+                                    </li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Монтаж настенной бра</span><span>от 400₽/шт</span>
+                                    </li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Сверление отверстий под точечный
+                                            светильник</span><span>350₽/шт</span>
+                                    </li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Монтаж точечного
+                                            светильника</span><span>350₽/шт</span>
+                                    </li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Монтаж светильника в потолок типа
+                                            "Армстронг"</span><span>400₽/шт</span>
+                                    </li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Установка механизма накладной
+                                            розетки/выключателя</span><span>190₽/шт</span>
+                                    </li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Коммутация соединительной/распределительной
+                                            коробки (до 5 проводов)</span><span>250₽/шт</span>
+                                    </li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Открытая прокладка
+                                            кабеля</span><span>60₽/м.п.</span>
+                                    </li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Прокладка кабеля в
+                                            кабель-канале</span><span>150₽/м.п.</span>
+                                    </li>
+                                    <li class="price__list-link">
+                                        <span class="service__name">Прокладка кабеля в гофрированной
+                                            трубе</span><span>90₽/м.п.</span>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -598,14 +620,135 @@
 
         <footer class="footer">
             <div class="container">
-
+                <div class="footer__body">
+                    <div class="footer__logo">Лого</div>
+                    <div class="footer__list">
+                        <a href="#" class="footer__list-item">О нас</a>
+                        <a href="#" class="footer__list-item">Наши тарифы</a>
+                        <a href="#" class="footer__list-item">Портфолио</a>
+                        <a href="#" class="footer__list-item">Цены</a>
+                        <a href="#" class="footer__list-item">Калькулятор</a>
+                        <a href="#" class="footer__list-item">Контакты</a>
+                    </div>
+                </div>
+                <div class="footer__description">
+                    <div class="copyright">
+                        <a href="#" class="copyright__item">© Elevation Studio 2022</a>
+                        <a href="#" class="copyright__item">Все права защищены</a>
+                    </div>
+                    <a href="#" class="law">Юридическая информация</a>
+                </div>
             </div>
         </footer>
+        <section class="section">
+            <div class="container">
+                <h2 class="portfolio__title section__title">Портфолио</h2>
+                <!-- /.portfolio__title section__title -->
+                <div class="tests">
+                    <div class="test1 test">
+                        <img src="src/img/portfolio/1.png" alt="">
+                    </div>
+                    <div class="test2 test">
+                        <img src="src/img/portfolio/2.png" alt="">
+                    </div>
+                    <div class="test3 test">
+                        <img src="src/img/portfolio/3.png" alt="">
+                    </div>
+                    <div class="test4 test">
+                        <img src="src/img/portfolio/4.png" alt="">
+                    </div>
+                    <div class="test5 test">
+                        <img src="src/img/portfolio/5.png" alt="">
+                    </div>
+                    <div class="test6 test">
+                        <h3 class="portfolio__item-title item__title">Больше фото наших работ смотрите в VK</h3>
+                        <p class="portfolio__link">
+                            <a href="#">@nazvanie_studii</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- /.portfolio__item -->
+            </div>
+            <!-- /.portfolio -->
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="debug">
+                    <div class="btns">
+                        <button id="btn">Электромонтажные работы</button>
+                    </div>
+                    <div class="text">
+                        Всякий текст
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <!-- <div class="popup__item"> -->
+                <a href="#" class="popup__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="none"
+                        class="to-svg">
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(0.707109 0.707105 -0.707109 0.707105 12.6 0.000244141)" fill="#000000">
+                        </rect>
+                        </rect>
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(-0.707109 0.707105 -0.707109 -0.707105 14 12.5999)" fill="#000000">
+                        </rect>
+                    </svg>
+                </a>
+                <div class="price__footer">
+                    <h2 class="price__footer-title section__title">Не нашли нужную услугу?</h2>
+                    <h3 class="price__footer-subtitle item__title">Давайте созвонимся и решим вашу проблему!
+                    </h3>
+                    <div class="price__form">
+                        <form action="/" class="form" id="form">
+                            <div class="form__item">
+                                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="form__item">
+                                <input class="form__input" type="tel" name="tel" placeholder="Телефон">
+                            </div>
+                            <div class="form__item">
+                                <select name="service" id="service" class="select">
+                                    <option value="lorem" disabled selected>Услуга, которую хотите заказать
+                                    </option>
+                                    <option value="lorem">Lorem.</option>
+                                    <option value="lorem">Lorem.</option>
+                                    <option value="lorem">Lorem.</option>
+                                    <option value="lorem">Lorem.</option>
+                                    <option value="lorem">Lorem.</option>
+                                </select>
+                            </div>
+                            <div class="form__item">
+                                <button class="button" type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="price__description">Нажимая на кнопку, вы даете согласие на обработку
+                        <a href="https://migpro36.ru/files/462237_policy.pdf?1619170808" target="_blank">персональных
+                            данных</a>
+                    </p>
+                    <div class="price__footer-img">
+                        <img src="src/img/price/phone.png" alt="Телефон">
+                    </div>
+                </div>
+                <!-- </div> -->
+
+            </div>
+
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    <script src="js/price.js"></script>
 </body>
 
 </html>
