@@ -45,7 +45,7 @@
                         <div class="nav__item nav__item-info">
                             <div class="nav__link">
                                 <div class="nav__link-icon">
-                                    <a href="#"><img src="src/img/header/phone.svg" alt="Телефон" /></a>
+                                    <a href="tel:+79202441698"><img src="src/img/header/phone.svg" alt="Телефон" /></a>
                                 </div>
                             </div>
                             <div class="nav__link">
@@ -303,8 +303,10 @@
                     <h2 class="portfolio__title section__title">Портфолио</h2>
                     <!-- /.portfolio__title section__title -->
                     <div class="portfolio">
-                        <div class="portfolio__item">
-                            <img src="src/img/portfolio/1.png" alt="">
+                        <div class="portfolio__left">
+                            <div class="portfolio__item">
+                                <img src="src/img/portfolio/1.png" alt="">
+                            </div>
                         </div>
                         <div class="portfolio__content">
                             <div class="portfolio__item">
@@ -320,10 +322,13 @@
                                 <img src="src/img/portfolio/5.png" alt="">
                             </div>
                             <div class="portfolio__item">
-                                <h3 class="portfolio__item-title item__title">Больше фото наших работ смотрите в VK</h3>
-                                <p class="portfolio__link">
-                                    <a href="#">@nazvanie_studii</a>
-                                </p>
+                                <div class="portfolio__item-content">
+                                    <h3 class="portfolio__item-title item__title">Больше фото наших работ смотрите в VK
+                                    </h3>
+                                    <p class="portfolio__link">
+                                        <a href="#">@nazvanie_studii</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <!-- /.portfolio__item -->
@@ -975,8 +980,7 @@
                                     </div>
                                     <div class="form__item">
                                         <select name="service" id="service" class="select">
-                                            <option value="lorem" disabled selected>Услуга, которую хотите заказать
-                                            </option>
+                                            <option value="lorem" disabled selected hidden>Выберите услугу</option>
                                             <option value="lorem">Lorem.</option>
                                             <option value="lorem">Lorem.</option>
                                             <option value="lorem">Lorem.</option>
@@ -1100,6 +1104,9 @@
             <section class="section section--contacts">
                 <div class="container">
                     <div class="contacts">
+                        <div class="contacts__item-image">
+                            <img src="src/img/contacts/point.svg" alt="">
+                        </div>
                         <div class="contacts__item">
                             <h3 class="contacts__item-title item__title">Вы всегда можете легко найти нас</h3>
                             <div class="contacts__content">
@@ -1136,10 +1143,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contacts__item-image">
-                            <img src="src/img/contacts/point.svg" alt="">
-                        </div>
-
                     </div>
 
                 </div>
@@ -1169,50 +1172,6 @@
                 </div>
             </div>
         </footer>
-        <section class="section">
-            <div class="container">
-                <h2 class="portfolio__title section__title">Портфолио</h2>
-                <!-- /.portfolio__title section__title -->
-                <div class="tests">
-                    <div class="test1 test">
-                        <img src="src/img/portfolio/1.png" alt="">
-                    </div>
-                    <div class="test2 test">
-                        <img src="src/img/portfolio/2.png" alt="">
-                    </div>
-                    <div class="test3 test">
-                        <img src="src/img/portfolio/3.png" alt="">
-                    </div>
-                    <div class="test4 test">
-                        <img src="src/img/portfolio/4.png" alt="">
-                    </div>
-                    <div class="test5 test">
-                        <img src="src/img/portfolio/5.png" alt="">
-                    </div>
-                    <div class="test6 test">
-                        <h3 class="portfolio__item-title item__title">Больше фото наших работ смотрите в VK</h3>
-                        <p class="portfolio__link">
-                            <a href="#">@nazvanie_studii</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- /.portfolio__item -->
-            </div>
-            <!-- /.portfolio -->
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="debug">
-                    <div class="btns">
-                        <button id="btn">Электромонтажные работы</button>
-                    </div>
-                    <div class="text">
-                        Всякий текст
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
     <div class="popup">
@@ -1245,7 +1204,7 @@
                             </div>
                             <div class="form__item">
                                 <select name="service" id="service" class="select">
-                                    <option value="lorem" disabled selected>Услуга, которую хотите заказать
+                                    <option value="lorem" disabled selected hidden>Выберите услугу
                                     </option>
                                     <option value="lorem">Lorem.</option>
                                     <option value="lorem">Lorem.</option>
@@ -1276,6 +1235,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/price.js"></script>
 </body>

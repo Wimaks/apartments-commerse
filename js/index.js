@@ -74,29 +74,23 @@ $(document).ready(function () {
     //     ]
     // });
 
-    // $('.tariff').slick({
-    //     infinite: false,
-    //     slidesToShow: 4,
-    //     appendArrows: $('.tariff__slider-btns'),
-    //     responsive: [{
-    //         breakpoint: 1230,
-    //         settings: {
-    //             slidesToShow: 3,
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 955,
-    //         settings: {
-    //             slidesToShow: 2
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 650,
-    //         settings: {
-    //             slidesToShow: 1
-    //         }
-    //     }]
-    // })
+    $('.tariff').slick({
+        infinite: false,
+        slidesToShow: 3,
+        arrows: false,
+        responsive: [{
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    })
 
     // 
 
