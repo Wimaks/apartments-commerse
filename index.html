@@ -16,7 +16,9 @@
             <div class="container">
                 <div class="header__inner">
                     <h2 class="header__logo">
-                        <a href="#" data-scroll="#intro">Лого</a>
+                        <a href="#" data-scroll="#intro">
+                            <img class="header__image" src="src/img/logo_2.png" alt="">
+                        </a>
                     </h2>
 
                     <nav class="nav">
@@ -34,7 +36,7 @@
                                 <a href="#" data-scroll="#reviews">Цены</a>
                             </div>
                             <div class="nav__link">
-                                <a href="#" data-scroll="#contacts">Калькулятор</a>
+                                <a href="#" data-scroll="#calculate">Калькулятор</a>
                             </div>
                             <div class="nav__link">
                                 <a href="#" data-scroll="#contacts">Контакты</a>
@@ -143,7 +145,7 @@
             </div>
             <!-- /.intro -->
 
-            <section class="section">
+            <section class="section" id="about">
                 <div class="container">
                     <h2 class="choose__title section__title">Почему нас выбирают</h2>
                     <div class="choose">
@@ -207,7 +209,7 @@
             </section>
             <!-- /.CHOOSE -->
 
-            <section class="section">
+            <section class="section" id="products">
                 <div class="container">
                     <h2 class="tariff__title section__title">Наши тарифы</h2>
                     <!-- /.tariff__title section__title -->
@@ -298,7 +300,7 @@
             </section>
             <!-- /.section -->
 
-            <section class="section">
+            <section class="section" id="cooperate">
                 <div class="container">
                     <h2 class="portfolio__title section__title">Портфолио</h2>
                     <!-- /.portfolio__title section__title -->
@@ -321,7 +323,7 @@
                             <div class="portfolio__item">
                                 <img src="src/img/portfolio/5.png" alt="">
                             </div>
-                            <div class="portfolio__item">
+                            <!-- <div class="portfolio__item">
                                 <div class="portfolio__item-content">
                                     <h3 class="portfolio__item-title item__title">Больше фото наших работ смотрите в VK
                                     </h3>
@@ -329,6 +331,9 @@
                                         <a href="#">@nazvanie_studii</a>
                                     </p>
                                 </div>
+                            </div> -->
+                            <div class="portfolio__item">
+                                <img src="src/img/portfolio/5.png" alt="">
                             </div>
                         </div>
                         <!-- /.portfolio__item -->
@@ -339,7 +344,7 @@
             </section>
             <!-- /.section -->
 
-            <section class="section section--price">
+            <section class="section section--price" id="reviews">
                 <div class="container">
                     <h2 class="price__title section__title">Цены</h2>
                     <!-- /.price__title section__title -->
@@ -1095,7 +1100,7 @@
             </section>
             <!-- /.section FAQ -->
 
-            <section class="section">
+            <section class="section" id="contacts">
                 <div class="container">
                     <h2 class="contacts__title section__title">Контакты</h2>
                 </div>
@@ -1153,14 +1158,16 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__body">
-                    <div class="footer__logo">Лого</div>
+                    <div class="footer__logo">
+                        <img class="header__image" src="src/img/logo_2.png" alt="">
+                    </div>
                     <div class="footer__list">
-                        <a href="#" class="footer__list-item">О нас</a>
-                        <a href="#" class="footer__list-item">Наши тарифы</a>
-                        <a href="#" class="footer__list-item">Портфолио</a>
-                        <a href="#" class="footer__list-item">Цены</a>
-                        <a href="#" class="footer__list-item">Калькулятор</a>
-                        <a href="#" class="footer__list-item">Контакты</a>
+                        <a href="#" class="footer__list-item" data-scroll="#about">О нас</a>
+                        <a href="#" class="footer__list-item" data-scroll="#products">Наши тарифы</a>
+                        <a href="#" class="footer__list-item" data-scroll="#cooperate">Портфолио</a>
+                        <a href="#" class="footer__list-item" data-scroll="#reviews">Цены</a>
+                        <a href="#" class="footer__list-item" data-scroll="#calculate">Калькулятор</a>
+                        <a href="#" class="footer__list-item" data-scroll="#contacts">Контакты</a>
                     </div>
                 </div>
                 <div class="footer__description">
