@@ -724,30 +724,46 @@ li {
 .portfolio {
     padding: 0 0 5rem 0;
 
-    /* display: flex; */
-    display: grid;
+    display: flex;
+    /* display: grid; */
     gap: 2rem;
-    grid-template-columns: 1fr 3fr;
+    /* grid-template-columns: 1fr 3fr; */
 }
 
 .portfolio__content {
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
     gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
 
-    /* align-items: center; */
-
-    display: grid;
+/* display: grid;
     grid-template-areas:
         "a a b"
-        "c d f";
+        "c d f"; */
+
+
+.portfolio__content-down {
+    display: flex;
+    gap: 2rem;
+}
+
+.portfolio__left {
+    display: flex;
+}
+
+.portfolio__right {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
 }
 
 .portfolio__item-content {
     margin: auto 0;
 }
 
-.portfolio__content .portfolio__item:nth-child(1) {
+/* .portfolio__content .portfolio__item:nth-child(1) {
     grid-area: a;
 }
 
@@ -766,12 +782,18 @@ li {
 .portfolio__content .portfolio__item:nth-child(5) {
     grid-area: f;
     padding: 5rem 0;
+} */
+
+#name__study {
+    margin: auto 0;
 }
 
 /* .portfolio__content .portfolio__item:nth-child(6) {} */
 
 .portfolio__item img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio__item-title,
